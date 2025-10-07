@@ -1,0 +1,15 @@
+# configs/dataset.yaml
+root: ./data
+images_dir: images
+masks_dir: masks
+classes:             # one channel per rule (order defines channel index)
+  - rule_00_arrow_not_touching
+  - rule_01_text_overlap_line
+  - rule_02_missing_dimension
+C: 3                  # must match number of classes
+tile_size: 1024
+tile_overlap: 256
+num_workers: 4
+seed: 42
+folds: 1              # or use GroupKFold later
+min_positive_area: 64 # px^2; used for positive tile mining
