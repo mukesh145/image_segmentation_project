@@ -12,9 +12,9 @@ dist/
 *.egg-info/
 
 # Data & runs
-data/images/
-data/masks/
-data/splits/
+data/
+data/train/
+data/val/
 runs/
 outputs/
 checkpoints/
